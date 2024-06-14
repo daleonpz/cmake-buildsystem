@@ -10,6 +10,8 @@ set(desired_common_linker_optimization_flags
 	# This seems to cause problems with GCC...
 	#-Wl,-dead_strip # Strip dead symbols for OS X
 	-Wl,--gc-sections # Strip dead sections for GCC
+    -Wl,--print-gc-sections # Print out the sections that were stripped
+    -Wl,--print-memory-usage # Print out memory usage
 )
 
 ####################################################
